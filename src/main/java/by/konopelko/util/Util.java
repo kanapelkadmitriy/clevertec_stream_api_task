@@ -55,8 +55,8 @@ public class Util {
             new House(7, "Civil building", personList.subList(500, 599)),
             new House(8, "Civil building", personList.subList(600, 699)),
             new House(9, "Civil building", personList.subList(700, 799)),
-            new House(9, "Civil building", personList.subList(800, 899)),
-            new House(9, "Civil building", personList.subList(900, 999))
+            new House(10, "Civil building", personList.subList(800, 899)),
+            new House(11, "Civil building", personList.subList(900, 999))
         );
     }
 

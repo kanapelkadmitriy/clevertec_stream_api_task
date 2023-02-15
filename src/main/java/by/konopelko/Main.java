@@ -240,6 +240,11 @@ public class Main {
     }
 
     private static void task16() throws IOException {
-
+        List<House> houses = Util.getHouses();
+        Map<Integer, Long> youngPersonsByHouse = houses.stream()
+                .collect(Collectors.toMap(House::getId, house -> house.getPersonList().stream()
+                        .filter(person -> Period.between(person.getDateOfBirth(), LocalDate.now()).getYears() < 18)
+                        .count()));
+        youngPersonsByHouse.forEach((houseId, quantity) -> System.out.println("Дом_" + houseId + " - " + quantity));
     }
 }
