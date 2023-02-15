@@ -1,4 +1,4 @@
-package by.sologub.model;
+package by.konopelko.model;
 
 public class Animal {
     private int id;
